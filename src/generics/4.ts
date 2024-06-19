@@ -7,7 +7,7 @@ type User = {
   password: string;
 }
 
-export function createOrUpdateUser(initialValues: Partial<User>) {
+export function createOrUpdateUser<T extends User>(initialValues: Partial<T>) {
   console.log("createOrUpdateUser ~ initialValues:", initialValues)
   // Оновлення користувача
 }
